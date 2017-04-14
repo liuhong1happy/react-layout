@@ -1,0 +1,40 @@
+{
+  "name": "react-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./lib",
+    "build": "npm run clean & NODE_ENV=production babel ./src --out-dir ./lib",
+    "clean-example": "rm -rf ./example/lib",
+    "build-to-example": "npm run clean-example & NODE_ENV=production babel ./src --out-dir ./example/lib"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuhong1happy/react-layout.git"
+  },
+  "keywords": [
+    "react",
+    "react-components",
+    "react-layout"
+  ],
+  "author": "Holly Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuhong1happy/react-layout/issues"
+  },
+  "homepage": "https://github.com/liuhong1happy/react-layout#readme",
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1"
+  }
+}
